@@ -2,8 +2,9 @@
 
 import time
 
-print("done guys")
-time.sleep(5)  # Wait 5 seconds so you can see the output
+print("done")
+time.sleep(10)  # Wait 5 seconds so you can see the output
+
 
 
 
