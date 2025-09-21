@@ -1,2 +1,2 @@
 @echo off
-start "" notepad.exe
+start "" explorer.exe
