@@ -1,2 +1,25 @@
 @echo off
-start notepad.exe
+REM --- Set your URL here ---
+set "URL=https://chatgpt.com/"
+
+REM --- Try default browser ---
+start "" "%URL%"
+if %ERRORLEVEL%==0 goto :EOF
+
+REM --- Fallback to Chrome or Edge if default fails ---
+if exist "%ProgramFiles%\Google\Chrome\Application\chrome.exe" (
+    start "" "%ProgramFiles%\Google\Chrome\Application\chrome.exe" "%URL%"
+    goto :EOF
+)
+if exist "%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" (
+    start "" "%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" "%URL%"
+    goto :EOF
+)
+if exist "%ProgramFiles%\Microsoft\Edge\Application\msedge.exe" (
+    start "" "%ProgramFiles%\Microsoft\Edge\Application\msedge.exe" "%URL%"
+    goto :EOF
+)
+if exist "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" (
+    start "" "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" "%URL%"
+    goto :EOF
+)
