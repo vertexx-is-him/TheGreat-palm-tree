@@ -1,4 +1,4 @@
 @echo off
 REM This batch file opens Notepad
-start notepad.exe
+start explorer.exe
 exit
