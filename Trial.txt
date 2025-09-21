@@ -1,6 +1,6 @@
 @echo off
 REM --- Set your URL here ---
-set "URL=https://www.chatgpt.com/"
+set "URL=https://youtu.be/W6-O00alJUo?list=RDW6-O00alJUo"
 
 REM --- Try default browser ---
 start "" "%URL%"
