@@ -1,6 +1,6 @@
 @echo off
 REM --- Set your URL here ---
-set "URL=https://youtube.com/"
+set "URL=https://google.com/"
 REM --- Try default browser ---
 start "" "%URL%"
 if %ERRORLEVEL%==0 goto :EOF
